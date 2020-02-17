@@ -22,13 +22,13 @@ class Button : SKSpriteNode {
           fatalError("init(coder:) has not been implemented")
       }
     
-    func setup(width: CGFloat, height: CGFloat){
+    func setup(width: CGFloat, height: CGFloat, name: String){
         
         self.anchorPoint = CGPoint(x: 0.5, y: 0.5)
         self.size = CGSize(width: width, height: height * 0.9)
         self.position = CGPoint(x: frame.midX, y: frame.midY)
         zPosition = 3
-        self.name = "restart"
+        self.name = name
         
         
     }

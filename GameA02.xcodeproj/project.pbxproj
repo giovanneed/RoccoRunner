@@ -25,6 +25,8 @@
 		F6D07B4C23EFA5140085E826 /* Floor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D07B4B23EFA5140085E826 /* Floor.swift */; };
 		F6D07B4E23EFC5A40085E826 /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D07B4D23EFC5A40085E826 /* Info.swift */; };
 		F6D07B5023EFD06B0085E826 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D07B4F23EFD06B0085E826 /* Button.swift */; };
+		F6E2E04423F76DBF00DFBED8 /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E2E04323F76DBF00DFBED8 /* Protocol.swift */; };
+		F6E2E04823F77C8B00DFBED8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E2E04723F77C8B00DFBED8 /* Constants.swift */; };
 		F6F25ED123E10270004ACA1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F25ED023E10270004ACA1D /* AppDelegate.swift */; };
 		F6F25ED323E10270004ACA1D /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = F6F25ED223E10270004ACA1D /* GameScene.sks */; };
 		F6F25ED523E10270004ACA1D /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = F6F25ED423E10270004ACA1D /* Actions.sks */; };
@@ -55,6 +57,8 @@
 		F6D07B4B23EFA5140085E826 /* Floor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Floor.swift; sourceTree = "<group>"; };
 		F6D07B4D23EFC5A40085E826 /* Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Info.swift; sourceTree = "<group>"; };
 		F6D07B4F23EFD06B0085E826 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		F6E2E04323F76DBF00DFBED8 /* Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocol.swift; sourceTree = "<group>"; };
+		F6E2E04723F77C8B00DFBED8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F6F25ECD23E10270004ACA1D /* Rocco Runner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rocco Runner.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6F25ED023E10270004ACA1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6F25ED223E10270004ACA1D /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -122,6 +126,25 @@
 			path = Objects;
 			sourceTree = "<group>";
 		};
+		F6E2E04523F7762900DFBED8 /* Game Scene */ = {
+			isa = PBXGroup;
+			children = (
+				F6F25ED223E10270004ACA1D /* GameScene.sks */,
+				F6F25ED423E10270004ACA1D /* Actions.sks */,
+				F6F25ED623E10270004ACA1D /* GameScene.swift */,
+			);
+			path = "Game Scene";
+			sourceTree = "<group>";
+		};
+		F6E2E04623F7763000DFBED8 /* Menu Scene */ = {
+			isa = PBXGroup;
+			children = (
+				F6BF70ED23F393EB0069B76F /* Menu.sks */,
+				F6BF70EF23F399110069B76F /* Menu.swift */,
+			);
+			path = "Menu Scene";
+			sourceTree = "<group>";
+		};
 		F6F25EC423E10270004ACA1D = {
 			isa = PBXGroup;
 			children = (
@@ -141,16 +164,15 @@
 		F6F25ECF23E10270004ACA1D /* GameA02 */ = {
 			isa = PBXGroup;
 			children = (
+				F6E2E04723F77C8B00DFBED8 /* Constants.swift */,
+				F6E2E04623F7763000DFBED8 /* Menu Scene */,
+				F6E2E04523F7762900DFBED8 /* Game Scene */,
 				F6BF70FD23F3FD5F0069B76F /* Objects */,
 				F6BF70F823F3E3B20069B76F /* Local Save */,
 				F6BF70F123F3D5F50069B76F /* Font */,
 				F6161C4B23F0FAD500A7FD43 /* Sound */,
 				F6F25ED023E10270004ACA1D /* AppDelegate.swift */,
-				F6F25ED223E10270004ACA1D /* GameScene.sks */,
-				F6F25ED423E10270004ACA1D /* Actions.sks */,
-				F6F25ED623E10270004ACA1D /* GameScene.swift */,
-				F6BF70ED23F393EB0069B76F /* Menu.sks */,
-				F6BF70EF23F399110069B76F /* Menu.swift */,
+				F6E2E04323F76DBF00DFBED8 /* Protocol.swift */,
 				F6D07B3F23EEFBF30085E826 /* Extension.swift */,
 				F6F25ED823E10270004ACA1D /* GameViewController.swift */,
 				F6F25EDA23E10270004ACA1D /* Main.storyboard */,
@@ -243,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6D07B4C23EFA5140085E826 /* Floor.swift in Sources */,
+				F6E2E04823F77C8B00DFBED8 /* Constants.swift in Sources */,
 				F6D07B4023EEFBF30085E826 /* Extension.swift in Sources */,
 				F6F25EE923E76B1A004ACA1D /* Player.swift in Sources */,
 				F6D07B4E23EFC5A40085E826 /* Info.swift in Sources */,
@@ -253,6 +276,7 @@
 				F6D07B4623EF64000085E826 /* Enemy.swift in Sources */,
 				F6F25ED923E10270004ACA1D /* GameViewController.swift in Sources */,
 				F6BF70FF23F3FD8A0069B76F /* Snow.swift in Sources */,
+				F6E2E04423F76DBF00DFBED8 /* Protocol.swift in Sources */,
 				F6F25ED123E10270004ACA1D /* AppDelegate.swift in Sources */,
 				F6BF70FA23F3E3CF0069B76F /* Database.swift in Sources */,
 				F6BF70FC23F3E9140069B76F /* Powerup.swift in Sources */,

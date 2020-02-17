@@ -28,7 +28,6 @@ class Snow : SKShapeNode {
         
         let x = Int.random(in: Int(-1*UIScreen.main.bounds.width/2)..<Int(UIScreen.main.bounds.width/2))
 
-        print(x)
 
         self.position = CGPoint(x: CGFloat(x), y: UIScreen.main.bounds.height/2)
         

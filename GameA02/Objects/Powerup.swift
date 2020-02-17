@@ -27,10 +27,8 @@ class Powerup : SKSpriteNode {
     func setup(withPosition p: CGFloat){
         
         let w = Int(UIScreen.main.bounds.width) * 2 + Int(p)
-        print("width: \(w)")
         let random = Int(arc4random_uniform(UInt32(w))+1)
         
-        print(random)
         
         self.zPosition = 3
         self.position.y = 0//UIScreen.main.bounds.height

@@ -91,6 +91,7 @@ class Player: SKSpriteNode {
     }
     
     func hitted(){
+        if flagHitted == true { return }
         flagHitted = true
              
         self.removeAllActions()
@@ -153,10 +154,7 @@ class Player: SKSpriteNode {
     
     
     func isOutOfScreen()->Bool {
-        print("x postion: \(self.position.x)")
-        print("-1*UIScreen.main.bounds.width + 20: \(-1*UIScreen.main.bounds.width + 20)")
-
-
+     
            
            return self.position.x < -1*UIScreen.main.bounds.width/2
     }

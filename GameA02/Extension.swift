@@ -19,7 +19,6 @@ extension SKNode {
 
             for i in 1...frames {
                 let playerTextureName = name + "\(i)"
-               // print(playerTextureName)
                 textures.append( SKTexture(imageNamed: playerTextureName))
 
             }
@@ -47,3 +46,25 @@ extension Array where Element: Equatable{
 }
 
 
+
+extension SKScene {
+    
+    func checkTouch(touch: UITouch, node: String)->Bool {
+          
+          let positionInScene = touch.location(in: self)
+          let touchedNode = self.atPoint(positionInScene)
+          
+          if let name = touchedNode.name
+          {
+              if name == node
+              {
+                  return true
+              }
+          }
+          
+          
+          
+          return false
+      }
+      
+}

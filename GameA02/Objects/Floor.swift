@@ -25,6 +25,7 @@ class Floor : SKShapeNode {
     func setup(){
 
         self.fillColor = UIColor(displayP3Red: 38/255.0, green: 38/255.0, blue: 38/255.0, alpha: 1)
+    
         self.zPosition = 1
         self.position = CGPoint(x: -UIScreen.main.bounds.width/2, y: -150)
 

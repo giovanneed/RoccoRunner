@@ -27,11 +27,9 @@ class Enemy : SKSpriteNode {
     func setup(withPosition p: CGFloat){
         
         let w = Int(UIScreen.main.bounds.width) * 2 + Int(p)
-        print("width: \(w)")
         //let random = Int(arc4random_uniform(UInt32(w))+1)
         let random = Int.random(in: Int(-1*UIScreen.main.bounds.width/2)..<Int(UIScreen.main.bounds.width/2))
 
-        print(random)
         
         self.zPosition = 3
         self.position.y -= 110
@@ -52,10 +50,8 @@ class Enemy : SKSpriteNode {
     func setupBin(){
         
         let w = Int(UIScreen.main.bounds.width) * 2
-        print("width: \(w)")
         let random = Int(arc4random_uniform(UInt32(w))+1)
         
-        print(random)
         
         self.zPosition = 3
         self.position.y -= 90
